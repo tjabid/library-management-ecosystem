@@ -30,3 +30,7 @@ next-env.d.ts
 /.claude
 
 # NOTE: .env.local.example is intentionally NOT gitignored — it is a committed template.
+/docs
+package-lock.json
+pnpm-lock.yaml
+.env.local.example
