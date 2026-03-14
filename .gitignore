@@ -1,0 +1,32 @@
+# Next.js
+.next/
+out/
+build/
+
+# Dependencies
+node_modules/
+
+# Environment variables — secrets (never commit these)
+.env
+.env.local
+.env.*.local
+iqraServiceAccountKey.json
+
+# Firebase cache (can be left until functions/ directory is deleted manually)
+.firebase/
+firebase-debug.log
+firestore-debug.log
+
+# Misc
+.DS_Store
+*.pem
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+/.claude
+
+# NOTE: .env.local.example is intentionally NOT gitignored — it is a committed template.
