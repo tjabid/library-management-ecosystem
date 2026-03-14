@@ -37,11 +37,11 @@ export default function LoginPage() {
       const code = (err as { code?: string }).code ?? "";
       const msg = (err as { message?: string }).message ?? "";
       if (code === "auth/invalid-credential" || code === "auth/wrong-password" || code === "auth/user-not-found") {
-        setError(`Invalid email or password. \n[${code}] ${msg}`);
+        setError(`Invalid email or password.`);
       } else if (code === "auth/operation-not-allowed") {
-        setError(`Email/password sign-in is not enabled in Firebase Console. \n[${code}] ${msg}`);
+        setError(`Email/password sign-in is not enabled in Firebase Console.`);
       } else if (code === "auth/invalid-api-key") {
-        setError(`Firebase API key is invalid — check .env.local. \n[${code}] ${msg}`);
+        setError(`Firebase API key is invalid — check .env.local.`);
       } else {
         setError(`Error (${code || "unknown"}): ${msg}`);
       }
